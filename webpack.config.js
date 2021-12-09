@@ -24,6 +24,10 @@ const config = {
           'style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       }
     ]
   },
@@ -34,9 +38,9 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateContent: ({ htmlWebpackPlugin }) => '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>Restaurant Roulette</title></head><body><div id=\"app\"></div></body></html>',
-      filename: 'index.html',
-    }),
+      title: 'Restaurant Roulette',
+      template: './public/index.html'
+    })
   ]
 };
 
