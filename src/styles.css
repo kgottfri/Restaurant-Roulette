@@ -1,7 +1,10 @@
 h1 {
-  color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
 }
 h2 {
   color:rgb(172, 16, 138);
   font-family: 'Courier New', Courier, monospace;
+}
+body {
+  background-color: rgb(34, 33, 33);
 }
