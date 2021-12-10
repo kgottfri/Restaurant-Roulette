@@ -6,4 +6,5 @@ import "./styles.css";
 
 
 var mountNode = document.getElementById("app");
+// var googleButton = document.getElementById('googleButton');
 ReactDOM.render(<App name="Restaurant Roulette" />, mountNode);
