@@ -47,7 +47,7 @@ class GoogleLoginComponent extends Component {
         <div className="col-md-12">
           {this.state.isLoggedIn ? (
             <div>
-              <h1>Welcome, {this.state.userInfo.name}</h1>
+            
 
               <GoogleLogout
                 clientId={CLIENT_ID}
