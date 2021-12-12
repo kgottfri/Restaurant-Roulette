@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./styles.module.css";
-// import "/public/index.html";
-
+import styles from "./styles.module.css";
 
 var mountNode = document.getElementById("app");
 var googleButton = document.getElementById('googleButton');
