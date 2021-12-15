@@ -19,6 +19,11 @@ const config = {
         exclude: /node_modules/
       },
       {
+        test: /\.js$/,
+        include: /node_modules\/react-dom/,
+        use: ['react-hot-loader/webpack']
+    },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
@@ -30,6 +35,11 @@ const config = {
         loader: 'html-loader'
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
   },
   devServer: {
     'static': {

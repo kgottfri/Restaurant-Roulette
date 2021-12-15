@@ -1,7 +1,7 @@
 h1 {
   color: rgb(255, 255, 255);
   text-align:center;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 h2 {
   color:rgb(172, 16, 138);
@@ -29,4 +29,10 @@ header {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  color:black
+
 }

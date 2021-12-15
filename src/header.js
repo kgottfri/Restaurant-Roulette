@@ -9,8 +9,17 @@ import GoogleLoginComponent from "./googlebutton.component";
 import styles from "./styles.module.css";
 import Menu from "@mui/material/Menu";
 import MenuItem from '@mui/material/MenuItem';
+import Home from './home.js';
+import Random from './random.js'
+import {
+    Link,
+    Outlet,
+    BrowserRouter as Router,
+    Routes,
+    Route
+  } from "react-router-dom";
 
-const pages = ['1st page', '2nd page', '3rd page'];
+const pages = ['Home', 'Random', 'Search'];
 
 export default function ButtonAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,17 +67,21 @@ export default function ButtonAppBar() {
                 display: { xs: 'block'},
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key="Home" to="/" onClick={handleCloseNavMenu}>
+                  <Link to="/"> Home</Link>
                 </MenuItem>
-              ))}
+                <MenuItem key="Random" to="/random" onClick={handleCloseNavMenu} >
+                  <Link to="/random"> Random </Link>
+                </MenuItem>
             </Menu>
           </Box>
           <GoogleLoginComponent />
         </Toolbar>
       </AppBar>
+      <Outlet />
       </div>
     </Box>
   );
+
 };
+
