@@ -19,11 +19,10 @@ import {
     Route
   } from "react-router-dom";
 
-const pages = ['Home', 'Random', 'Search'];
-
 export default function ButtonAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
+//Open and Close Nav handle header app bar menu 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -36,7 +35,7 @@ export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
     <div style={styles.header}>
-      <AppBar style={{ background: 'transparent', boxShadow: 'none', margin: '2px' }} color="primary">
+      <AppBar style={{ background: 'transparent', boxShadow: 'none', margin: '2px'}} position="static" color="primary">
         <Toolbar>
         <Box sx={{flexGrow: 1, display: { sx: 'flex'} }}>
             <IconButton

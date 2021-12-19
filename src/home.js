@@ -10,15 +10,17 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-
-
+  import { useJsApiLoader, withGoogleMap, GoogleMap, LoadScript } from "@react-google-maps/api";
+ 
 class Home extends React.Component{
   render(){
+
     return (
     <div>
       <h1>Welcome to Restaurant Roulette</h1>
 
       <h2>You're home for choosing a restaurant</h2>
+
       <div>
       <Box sx={{ pt: 10, mx: 'auto', width: 150 }}>
         <Button variant="contained"><Link to="/random">Get Started</Link></Button>

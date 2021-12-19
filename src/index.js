@@ -19,7 +19,7 @@ ReactDOM.render(
     <App name="Restaurant Roulette"/>
       <Routes>
         <Route exact path = "/" element={<Home />} />
-        <Route path="random" element={<Random />} />
+        <Route path="/random" element={<Random /> } />
       </Routes>
     </BrowserRouter>, 
     mountNode,googleButton);
