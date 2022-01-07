@@ -13,6 +13,9 @@ import Random from "./random.js";
 import styles from "./styles.module.css";
 import {Outlet, Link} from "react-router-dom";
 
+/*
+App routing
+*/
 
 class App extends React.Component{
   constructor() {

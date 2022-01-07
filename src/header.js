@@ -19,6 +19,12 @@ import {
     Route
   } from "react-router-dom";
 
+  /*
+  Header to be displayed on every page
+  Contains MenuAppBar for navigation
+  Google sign in/out button
+  
+  */
 export default function ButtonAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 

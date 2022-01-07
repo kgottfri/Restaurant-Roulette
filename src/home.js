@@ -12,6 +12,13 @@ import {
   } from "react-router-dom";
   import { useJsApiLoader, withGoogleMap, GoogleMap, LoadScript } from "@react-google-maps/api";
  
+  /*
+  Home page
+  Can nav to:
+  Home
+  Random
+  Google account sign in/out
+  */
 class Home extends React.Component{
   render(){
 
