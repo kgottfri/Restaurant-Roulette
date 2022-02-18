@@ -11,7 +11,7 @@ import { useJsApiLoader, useGoogleMap, GoogleMap, LoadScript } from "@react-goog
   
 */
 
-var key="key=AIzaSyBU4t6d1OZIlwlTapVCDBAU5dOMgZu39CA"; //Google API Key
+ //Google API Key
 const containerStyle = {
   width: '500px',
   height: '500px'
